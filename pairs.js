@@ -2,7 +2,7 @@
 
 const pairs = (elements) => {
     let deb = [ ] // <-- deb is empty inside
-    for (let i = 0; i < elements.length; i++){
+    for (let i = 0; i < elements.length - 1; i++){
       
       for (let j = i + 1; j < elements.length; j++){
         
