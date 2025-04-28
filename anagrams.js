@@ -9,7 +9,19 @@ const anagrams = (s1, s2) => {
       }
         toniBraxton[char] += 1;
     }
-    console.log(toniBraxton)
+    for (let char of s2){
+      if (char in toniBraxton){
+        toniBraxton[char] -= 1;
+      } else {
+        return false;
+      }
+    }
+    for (let char in toniBraxton){
+      if (toniBraxton[char] !== 0){
+        return false;
+      }
+    }
+    return true;
   };
   
   anagrams('restful', 'fluster'); // -> true
