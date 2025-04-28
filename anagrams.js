@@ -1,12 +1,15 @@
 // Write a function, anagrams, that takes in two strings as arguments. The function should return a boolean indicating whether or not the strings are anagrams. Anagrams are strings that contain the same characters, but in any order.
 
 const anagrams = (s1, s2) => {
-    let toniBraxton = { }
+    let toniBraxton = {};
   
     for ( let char of s1 ){
-      if (!(char in count))
-        key in object
+      if (!(char in toniBraxton)){
+        toniBraxton[char] = 0;
+      }
+        toniBraxton[char] += 1;
     }
+    console.log(toniBraxton)
   };
   
   anagrams('restful', 'fluster'); // -> true
@@ -14,7 +17,6 @@ const anagrams = (s1, s2) => {
   module.exports = {
     anagrams,
   };
-  
   
   // P - 2 strings
   // R - boolean true or false, if they are or are not anagrams
