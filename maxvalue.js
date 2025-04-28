@@ -1,6 +1,5 @@
 //Write a function, maxValue, that takes in array of numbers as an argument. The function should return the largest number in the array.
 
-
 const maxValue = (nums) => {
   
     return Math.max(...nums)
@@ -9,7 +8,6 @@ const maxValue = (nums) => {
   module.exports = {
     maxValue,
   };
-  
 
   // or
 
@@ -25,7 +23,6 @@ const maxValue = (nums) => {
   };
   
   maxValue([4, 7, 2, 8, 10, 9]); // -> 10
-  
   
   module.exports = {
     maxValue,
